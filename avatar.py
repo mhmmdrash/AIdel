@@ -1,5 +1,10 @@
 import requests
 import json
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+did_key = os.getenv("DID")
 
 url = "https://api.d-id.com/talks"
 
@@ -24,7 +29,7 @@ def post_req(text):
     headers = {
         "accept": "application/json",
         "content-type": "application/json",
-        "authorization": "Basic Ylc5b1lXMXRZV1J5WVhOb1pXVmtOVFpBWjIxaGFXd3VZMjl0OkFnSkROcGxuNE56VG1DWFA2N3UxQw=="
+        "authorization": did_key 
     }
 
     response = requests.post(url, json=payload, headers=headers)
