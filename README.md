@@ -7,7 +7,6 @@ Here I have created an AI avatar that talks back based on any query given
 - langchain 
 - openai
 - DiD
-- ElevenLabs
 - streamlit
 
 # Install dependacies
