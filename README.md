@@ -9,6 +9,11 @@ Here I have created an AI avatar that talks back based on any query given
 - DiD
 - ElevenLabs
 
+# Install dependacies
+```bash
+pip install -r requirements.txt
+```
+
 # How to Run
 ```bash
 streamlit run aidel.py
