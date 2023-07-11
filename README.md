@@ -10,6 +10,6 @@ Here I have created an AI avatar that talks back based on any query given
 - ElevenLabs
 
 # How to Run
-'''
+```bash
 streamlit run aidel.py
-'''
+```
