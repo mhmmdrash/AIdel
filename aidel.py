@@ -10,9 +10,13 @@ import avatar
 import get_video
 import time
 from langchain_custom_llm_wrapper import CustomLLM 
+from dotenv import load_dotenv, dotenv_values
 local_llm = CustomLLM(api_url="http://65.108.32.164:5000/chat") 
 
-os.environ['OPENAI_API_KEY'] = "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" 
+load_dotenv()
+openai_key = os.getenv("OPENAI")
+did_key = os.getenv("DID")
+os.environ['OPENAI_API_KEY'] = openai_key
 
 st.title('🦜🔗 AIdel 🦜🔗')
 text = st.text_input("Enter you Question here: ")
